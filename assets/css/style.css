@@ -19,6 +19,8 @@
     font-size: 2.2rem;
     font-weight: 600;
     text-decoration: none;
+    padding-left: 0px;
+ 
 
 }
 .menu-item{
@@ -27,6 +29,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    
 }
 .list-item{
     padding: 0px 10px;
@@ -90,4 +94,72 @@
 
 .icon i {
     line-height: 2rem;
+}
+/* toggle bar */
+.toggle{
+    width: 2rem;
+    height: 2.2rem;
+    border: 1.5px solid var(--dark-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border-radius: 5px; 
+}
+
+.close {
+    font-size: 2rem  
+}
+.open{
+   transform: rotate(45deg); 
+   font-size: 2rem;
+   display: none;
+}
+
+
+@media (max-width: 991.98px) {
+    .wrapper{
+        padding: 0px 25px;
+        overflow: hidden;
+    }
+    .flex-box{
+        flex-wrap: wrap;
+    }
+    .nav-bar{
+        height: auto;
+    }
+    .menu-item{
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: relative;
+        transform: none;
+        display:none;
+        text-align: center;  
+    }
+    .list-item{
+        padding: 10px 0px;
+    }
+    .menu-icon{
+        width: 100%;
+        padding-top: 20px;
+        display: none;
+    }
+    .toggle{
+        display: flex;
+    }
+    #checkbox:checked ~ .menu-item{
+        display: block;
+    }
+    #checkbox:checked ~ .menu-icon{
+        display: flex;
+        justify-content: center;
+    }
+    #checkbox:checked ~ .toggle .open{
+       display: block; 
+    }
+    #checkbox:checked ~ .toggle .close{
+        display:none;  
+     }
+
 }
