@@ -5,7 +5,12 @@
 
 .nav-bar{
     padding: 20px 0px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, .2);
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, .03);
+    /* background: transparent; */
+    /* background-color: cadetblue; */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 
 }
 .nav{
@@ -100,7 +105,6 @@
     width: 2rem;
     height: 2.2rem;
     border: 1.5px solid var(--dark-bg-color);
-    display: flex;
     align-items: center;
     justify-content: center;
     display: none;
@@ -115,6 +119,60 @@
    font-size: 2rem;
    display: none;
 }
+/* header section style */
+.header-section{
+    min-height: 100vh;
+    background: var(--header-bg-color);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    position: relative;
+    overflow: hidden;
+}
+.header-section::before{
+    content: 'MR';
+    top: 0;
+    right: 0;
+    color: var(--dark-bg-color);
+    font-size: 40rem;
+    line-height: 417px;
+    font-family: var(--header-font);
+    position: absolute;
+    letter-spacing: -3.2rem;
+    opacity: .08;
+
+}
+.hero-header{
+    align-items: center;
+
+}
+.header-img{
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+    object-fit: cover;
+    width: 100%;
+}
+
+.header-content{
+    position: relative;
+    z-index: 90;
+    padding-left: 4rem;
+
+}
+.header-title{
+    font-size: 3rem;
+    line-height:3.5rem;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    color: var(--primary-heading-color);
+    font-weight: 600;
+
+}
+.header-text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: var(--content-text);
+}
+
 
 
 @media (max-width: 991.98px) {
@@ -127,6 +185,7 @@
     }
     .nav-bar{
         height: auto;
+       
     }
     .menu-item{
         width: 100%;
@@ -136,6 +195,7 @@
         transform: none;
         display:none;
         text-align: center;  
+        background-color: #fff;
     }
     .list-item{
         padding: 10px 0px;
@@ -144,6 +204,8 @@
         width: 100%;
         padding-top: 20px;
         display: none;
+        background-color: #fff;
+        padding-bottom: 30px;
     }
     .toggle{
         display: flex;
@@ -161,5 +223,67 @@
     #checkbox:checked ~ .toggle .close{
         display:none;  
      }
+     
 
 }
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 1399.98px) {
+    .hero-header{
+        margin-top: 7rem;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 1199.98px) {
+    .header-title {
+        font-size: 3rem;
+        /* margin-top: 6rem; */
+    }
+   
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .header-section::before {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+    .hero-header {
+        flex-direction: column-reverse;
+    }
+    
+    .half-box {
+        width: 100%;
+        text-align: center;
+    }
+    .header-content {
+        padding: 0;
+        /* margin-top: 5rem; */
+    }
+   
+
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 767.98px) {
+    .header-title {
+       font-size: 3rem;
+
+    }
+
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 575.98px) {
+    .header-title {
+        font-size: 2rem;
+        line-height: 3rem;
+        /* padding-top: 2rem; */
+    }
+}
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */

@@ -11,5 +11,8 @@ body{
 
     --primary-brand-color:#ff6347;
     --second-brand-color:#f57c67;
+    --header-bg-color: radial-gradient(#d4d9db, #d5dade);
+    --header-effect-color: #cdcdcd;
+    
 
 }
