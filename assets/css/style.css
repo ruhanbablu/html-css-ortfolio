@@ -148,7 +148,8 @@
 .header-img{
     height: calc(100vh - 100px);
     object-fit: cover;
-    width: 100%;
+    width: 90%;
+    object-position: center;
 }
 
 .header-content{
@@ -238,6 +239,11 @@
         font-size: 3rem;
         /* margin-top: 6rem; */
     }
+    .header-img{
+        object-position: center;
+        min-height: 80vh;
+    }
+   
    
 
 }
@@ -263,10 +269,10 @@
         /* margin-top: 5rem; */
     }
     .header-img{
-        margin-top:20px;
-        object-fit: cover;
+        object-fit:contain;
         width: 100%;
-        object-position: top;
+        object-position: center;
+        min-height: 150vh;
     }
    
 
@@ -282,6 +288,13 @@
     .header-section::before {
         font-size: 30rem;
     }
+    .header-img{
+        object-fit:cover;
+        width: 100%;
+        object-position: center;
+        min-height: 100vh;
+    }
+   
 
 }
 
