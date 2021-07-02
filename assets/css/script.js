@@ -3,11 +3,35 @@ icon.onclick = function(){
     document.body.classList.toggle('dark-mood');
     if(document.body.classList.contains('dark-mood')){
         icon.src = "./assets/img/sun.png";
-        console.log(icon.src);
     }else{
         icon.src = "./assets/img/moon.png";
     }
 }
+var red = document.getElementsByClassName('red')[0];
+console.log(red);
+red.onclick = function(){
+    document.body.classList.toggle('red-color');
+}
+var green = document.getElementsByClassName('green')[0];
+green.onclick = function(){
+    document.body.classList.toggle('green-color');
+};
+var blue = document.getElementsByClassName('blue')[0];
+blue.onclick = function(){
+    document.body.classList.toggle('blue-color');
+}
+var yellow = document.getElementsByClassName('yellow')[0];
+yellow.onclick = function(){
+    document.body.classList.toggle('yellow-color');
+};
+var pink = document.getElementsByClassName('pink')[0];
+pink.onclick = function(){
+    document.body.classList.toggle('pink-color');
+};
+var purple = document.getElementsByClassName('purple')[0];
+purple.onclick = function(){
+    document.body.classList.toggle('purple-color');
+};
 // let sliderelement = document.getElementsByClassName('slider')[0];
 //  sliderelement.appendChild = ('sliderElements1');
 //  console.log(sliderelement);
@@ -84,7 +108,7 @@ sr.reveal(`.header-title, .header-text, .freelance`, {
 })
 const img = ScrollReveal({
     origin: 'right',
-    distance:'200px',
+    distance:'50px',
     duration:2000,
     reset: true
 })
@@ -93,7 +117,7 @@ img.reveal(`.img-box, .right`,{
 })
 const text = ScrollReveal({
     origin: 'left',
-    distance:'200px',
+    distance:'50px',
     duration:2000,
     reset: true
 })

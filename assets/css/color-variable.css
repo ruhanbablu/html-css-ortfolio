@@ -1,16 +1,14 @@
 
 body{
     --primary-heading-color:#25292c;
-    --secondary-heading-color:#e84118;
+    --primary-brand-color:#e84118;
 
     --dark-text-color:#121416;
     --light-text-color:rgb(206, 201, 201);
 
     --light-bg-color:rgb(255, 255, 255);
     --dark-bg-color:rgb(0, 0, 0);
-
-    --primary-brand-color:#e84118;
-    --second-brand-color:#f57c67;
+    
     --header-bg-color: radial-gradient(#d4d9db, #d5dade);
     --header-effect-color: #cdcdcd;
     
@@ -25,4 +23,22 @@ body{
     --dark-bg-color:#fff;
     --header-bg-color: radial-gradient(#0a1013, #222e38);
 
+}
+.red-color{
+    --primary-brand-color:#fb0000;
+}
+.green-color{
+    --primary-brand-color:#008000;
+}
+.blue-color{
+    --primary-brand-color:#010ca3;
+}
+.yellow-color{
+    --primary-brand-color:#FFFF2E;
+}
+.pink-color{
+    --primary-brand-color:#FFC0CB;
+}
+.purple-color{
+    --primary-brand-color:#800080;
 }
