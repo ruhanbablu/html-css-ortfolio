@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+.body{
+    position: relative;
 }
 
 
@@ -19,7 +23,7 @@
 .wrapper{
     max-width: 100%;
     width: var(--wrapper-width);
-    margin: 0 auto;
+    margin: 0px auto;
 }
 h1, h2 ,h3, h4, h5{
     font-family:var(--header-font);
@@ -28,6 +32,21 @@ h1, h2 ,h3, h4, h5{
 p, a, div{
     font-family: var(--content-text);
 }
+.title{
+    font-size: 3.5rem;
+    line-height:4rem;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    color: var(--primary-heading-color);
+    font-weight: 800;
+
+}
+ .text{
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+    font-family: var(--content-text);
+    color: var(--dark-text-color);
+ }
 
 .flex-box{
     --flex-gap:2rem;
@@ -49,7 +68,7 @@ p, a, div{
     background-color: var(--primary-brand-color);
     font-size: 1.5rem;
     text-decoration: none;
-    color: var(--light-bg-color);
+    color: var(--dark-text-color);
     border-radius: .7rem;
     margin-top: 2.2rem;
     text-transform: capitalize;
@@ -57,49 +76,56 @@ p, a, div{
 
 }
 .primary-btn:hover{
-    box-shadow: 5px 0px 20px rgba(0, 0, 0, .2);
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, .2);
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+.mark-text{
+    color: var(--primary-brand-color)
 }
 
-
+#icon{
+    position:fixed;
+    width: 40px;
+    top: 150px;
+    right: 50px;
+    z-index: 1000;
+    cursor: pointer;
+}
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 1399.98px) {
     :root{
         --wrapper-width:1140px;
     }
 }
-
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 1199.98px) {
     :root{
         --wrapper-width:960px;
     }
-
 }
-
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     :root{
         --wrapper-width:720px;
     }
-
-
 }
-
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 767.98px) {
     :root{
         --wrapper-width:540px;
     }
-
-
 }
-
 /* // X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 575.98px) {
     :root{
         --wrapper-width:100%;
     }
-
+    #icon{
+        width: 25px;
+    }
 }
 
 /* // XX-Large devices (larger desktops)

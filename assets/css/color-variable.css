@@ -1,18 +1,28 @@
 
 body{
-    --primary-heading-color:#111;
-    --secondary-heading-color:#ff6347;
+    --primary-heading-color:#25292c;
+    --secondary-heading-color:#e84118;
 
-    --dark-text-color:#111;
-    --light-text-color:#fff;
+    --dark-text-color:#121416;
+    --light-text-color:rgb(206, 201, 201);
 
-    --light-bg-color:#fff;
-    --dark-bg-color:#111;
+    --light-bg-color:rgb(255, 255, 255);
+    --dark-bg-color:rgb(0, 0, 0);
 
-    --primary-brand-color:#ff6347;
+    --primary-brand-color:#e84118;
     --second-brand-color:#f57c67;
     --header-bg-color: radial-gradient(#d4d9db, #d5dade);
     --header-effect-color: #cdcdcd;
     
+
+}
+
+.dark-mood{
+    --primary-heading-color:#b1bdcc;
+    --dark-text-color:#fff;
+    --light-text-color:#111;
+    --light-bg-color:#111;
+    --dark-bg-color:#fff;
+    --header-bg-color: radial-gradient(#0a1013, #222e38);
 
 }
