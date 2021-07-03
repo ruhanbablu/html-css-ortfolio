@@ -7,31 +7,40 @@ icon.onclick = function(){
         icon.src = "./assets/img/moon.png";
     }
 }
-var red = document.getElementsByClassName('red')[0];
-console.log(red);
-red.onclick = function(){
-    document.body.classList.toggle('red-color');
-}
-var green = document.getElementsByClassName('green')[0];
-green.onclick = function(){
-    document.body.classList.toggle('green-color');
-};
-var blue = document.getElementsByClassName('blue')[0];
-blue.onclick = function(){
-    document.body.classList.toggle('blue-color');
-}
-var yellow = document.getElementsByClassName('yellow')[0];
-yellow.onclick = function(){
-    document.body.classList.toggle('yellow-color');
-};
-var pink = document.getElementsByClassName('pink')[0];
-pink.onclick = function(){
-    document.body.classList.toggle('pink-color');
-};
-var purple = document.getElementsByClassName('purple')[0];
-purple.onclick = function(){
-    document.body.classList.toggle('purple-color');
-};
+// var red = document.getElementsByClassName('red')[0];
+// red.onclick = function(){
+//     document.getElementsByClassName('brand-logo')[0].style.color ='#f53b75';
+//     document.getElementsByClassName('icon')[0].style.backgroundColor ='#f53b75';
+//     document.getElementsByClassName('icon')[1].style.backgroundColor ='#f53b75';
+//     document.getElementsByClassName('icon')[2].style.backgroundColor ='#f53b75';
+//     // document.getElementsByClassName('icon')[3].style.hover.backgroundColor ='#f53b75';
+
+// }
+// var green = document.getElementsByClassName('green')[0];
+// green.onclick = function(){
+//     document.body.classList.toggle('green-color');
+//     document.body.remove.classList('red-color,green-color, blue-color,yellow-color, pink-color, purple-color');
+// }
+// var blue = document.getElementsByClassName('blue')[0];
+// blue.onclick = function(){
+//     document.body.classList.toggle('blue-color');
+//     document.body.remove.classList('red-color,blue-color green-color,yellow-color, pink-color, purple-color');
+// }
+// var yellow = document.getElementsByClassName('yellow')[0];
+// yellow.onclick = function(){
+//     document.body.classList.toggle('yellow-color');
+//     document.body.remove.classList('red-color, yellow-color, blue-color, green-color, pink-color, purple-color');
+// };
+// var pink = document.getElementsByClassName('pink')[0];
+// pink.onclick = function(){
+//     document.body.classList.toggle('pink-color');
+//     document.body.remove.classList('red-color, pink-color, blue-color,yellow-color, green-color, purple-color');
+// };
+// var purple = document.getElementsByClassName('purple')[0];
+// purple.onclick = function(){
+//     document.body.classList.toggle('purple-color');
+//     document.body.remove.classList('red-color, purple-color, blue-color,yellow-color, pink-color, green-color');
+// };
 // let sliderelement = document.getElementsByClassName('slider')[0];
 //  sliderelement.appendChild = ('sliderElements1');
 //  console.log(sliderelement);
@@ -109,11 +118,11 @@ sr.reveal(`.header-title, .header-text, .freelance`, {
 const img = ScrollReveal({
     origin: 'right',
     distance:'50px',
-    duration:2000,
+    duration:1000,
     reset: true
 })
-img.reveal(`.img-box, .right`,{
-    interval: 200
+img.reveal(`.img-box, .right, .grid-item, .card`,{
+    interval:100
 })
 const text = ScrollReveal({
     origin: 'left',

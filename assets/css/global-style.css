@@ -73,7 +73,6 @@ p, a, div{
     margin-top: 2.2rem;
     text-transform: capitalize;
     transition: all 300ms ease;
-
 }
 .primary-btn:hover{
     box-shadow: 10px 0px 20px rgba(0, 0, 0, .2);
@@ -100,7 +99,7 @@ img{
     right: 0px;
     width: 30px;
     height: 145px;
-    background-color:var(--primary-brand-color);
+    background: transparent;
     z-index: 500;
     border-radius: 3px;
 }
@@ -108,26 +107,26 @@ img{
     width:18px;
     height: 18px;
     border-radius: 50%;
-    margin: 5px auto;
+    margin: 8px auto;
     cursor: pointer;
 }
 .red{
-    background-color: red;
+    background-color: #f53b75;
 }
 .green{
-    background-color: green;
+    background-color: #0be881;
 }
 .blue{
-    background-color: blue;
+    background-color: #3867d6;
 }
 .yellow{
-    background-color: yellow;
+    background-color: #fffab5;
 }
 .pink{
-    background-color: pink;
+    background-color: #fc427b;
 }
 .purple{
-    background-color: purple;
+    background-color: #6f1e51;
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 1399.98px) {
