@@ -224,11 +224,11 @@
     font-size: 35px;
     width: 75px;
     height: 75px;
-    border: 1px solid var(--dark-bg-color);
+    border: 1px solid var(--primary-brand-color);
     line-height: 75px;
     text-align: center;
     border-radius: 50%;
-    color: var(--dark-text-color);
+    color: var(--primary-brand-color);
 }
 /* freelance style  */
 .freelance{
