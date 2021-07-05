@@ -673,11 +673,6 @@ footer{
         font-size: 2rem;
         line-height: 2.5rem;
     }
-    .testimonial-text{
-        text-align: center;
-        color: var(--light-text-color);
-        margin-bottom: 40px;   
-    }
     .contact-grid{
         grid-template-columns:100%;
     }

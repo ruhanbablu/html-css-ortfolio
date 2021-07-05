@@ -122,7 +122,7 @@ let testemonials = [
     },
     {
         id: 4,
-        img: "./assets/img/Ujjal.jpg",
+        img: "./assets/img/ujjal.jpg",
         text: " i'm Ujjal From Bangladesh, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione   aperiam  cumque tempora praesentium cum molestiae ea doloremque impedit quaerat nam Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda eos reprehenderit excepturi accusantium ullam recusandae esse ipsa, eius repellendus.",
         name: "Ujjal Siddeki",
     }
