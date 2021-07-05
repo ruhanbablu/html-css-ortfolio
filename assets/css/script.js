@@ -100,6 +100,68 @@ let nav = document.querySelector('.nav-bar');
          })
      })
 
+let testemonials = [
+    {
+        id: 1,
+        img: "./assets/img/misbahur.jpg",
+        text: "Misbahur Rahman from Bangladesh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione   aperiam  cumque tempora praesentium cum molestiae ea doloremque impedit quaerat nam Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda eos reprehenderit excepturi accusantium ullam recusandae esse ipsa, eius repellendus.",
+        name: "Misbahur Rahman",
+    },
+    {
+        id: 2,
+        img: "./assets/img/jayed.jpg",
+        text: " This is Jayed,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione   aperiam  cumque tempora praesentium cum molestiae ea doloremque impedit quaerat nam Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda eos reprehenderit excepturi accusantium ullam recusandae esse ipsa, eius repellendus.",
+        name: "Jayed",
+
+    },
+    {
+        id: 3,
+        img: "./assets/img/eva.jpg",
+        text: "I'm Eva,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione   aperiam  cumque tempora praesentium cum molestiae ea doloremque impedit quaerat nam Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda eos reprehenderit excepturi accusantium ullam recusandae esse ipsa, eius repellendus.",
+        name: "AF Eva",
+    },
+    {
+        id: 4,
+        img: "./assets/img/Ujjal.jpg",
+        text: " i'm Ujjal From Bangladesh, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione   aperiam  cumque tempora praesentium cum molestiae ea doloremque impedit quaerat nam Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda eos reprehenderit excepturi accusantium ullam recusandae esse ipsa, eius repellendus.",
+        name: "Ujjal Siddeki",
+    }
+];
+
+const personImg = document.getElementById('person-img');
+const info = document.getElementById('person-text');
+const name = document.getElementById('person-name');
+
+const rightBtn = document.getElementById('right-btn');
+const leftBtn = document.getElementById('left-btn');
+
+let currentItem = 0;
+
+window.addEventListener('DOMContentLoaded', function(){
+    showPerson(currentItem)
+})
+
+function showPerson(person){
+    const item = testemonials[person];
+    personImg.src = item.img;
+    info.textContent = item.text;
+    name.textContent =item.name;
+}
+rightBtn.addEventListener('click', function(){
+    currentItem++;
+    if(currentItem > testemonials.length -1){
+        currentItem = 0;
+    }
+    showPerson(currentItem)
+})
+leftBtn.addEventListener('click', function(){
+    currentItem--;
+    if(currentItem < 0){
+        currentItem = testemonials.length -1;
+    }
+    showPerson(currentItem)
+})
+
 // var red = document.getElementsByClassName('red')[0];
 // red.onclick = function(){
 //     document.getElementsByClassName('brand-logo')[0].style.color ='#f53b75';

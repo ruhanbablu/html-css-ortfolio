@@ -247,7 +247,7 @@
 .freelance-btn{
     margin-top: 10px;
     font-size: 1.2rem;
-    color:#fff;
+    color:var(--dark-bg-color);
 }
 /* testimonial style start */
 .testimonial-section{
@@ -269,7 +269,6 @@
     color: var(--dark-text-color);
     margin-bottom: 40px;
 }
-/* portfolio style start */
 .slider{
     text-align: center;
 }
@@ -293,6 +292,21 @@
 .name{
     margin-top: 30px;
     color: var(--dark-text-color);
+    display: block;
+}
+.fa-chevron-right, .fa-chevron-left{
+    font-size: 2rem;
+    color: var(--dark-bg-color);
+    margin: 15px 30px;
+ 
+
+}
+#left-btn, #right-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
 }
 /* portfolio style start  */
 .portfolio-section{
