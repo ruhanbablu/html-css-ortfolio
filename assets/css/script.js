@@ -7,13 +7,111 @@ icon.onclick = function(){
         icon.src = "./assets/img/moon.png";
     }
 }
+
+    
+let nav = document.querySelector('.nav-bar');
+    const colorPick = document.querySelectorAll('.color');
+     colorPick.forEach(function(item){
+
+         item.addEventListener('click',function(e){
+             let style = e.currentTarget.classList;
+             if (style.contains('green')){
+                let color = document.querySelectorAll('.brand-color');
+                color.forEach(function(brandColor){
+                    brandColor.style.color = '#0be881'
+                    let icon = document.querySelectorAll('.icon');
+                    icon.forEach(function(item){
+                        item.style.backgroundColor = '#0be881';
+                        let bgc = document.querySelectorAll('.time-name');
+                        bgc.forEach(function(time){
+                            time.style.backgroundColor = '#0be881'
+                        })
+                        
+                    })
+                })
+             }else if (style.contains('red')){
+                let color = document.querySelectorAll('.brand-color');
+                color.forEach(function(brandColor){
+                    brandColor.style.color = '#ad063b'
+                    let icon = document.querySelectorAll('.icon');
+                    icon.forEach(function(item){
+                        item.style.backgroundColor = '#ad063b'
+                        let bgc = document.querySelectorAll('.time-name');
+                        bgc.forEach(function(time){
+                            time.style.backgroundColor = '#ad063b'
+                        })
+                    })
+             })
+             } else if (style.contains('blue')){
+                let color = document.querySelectorAll('.brand-color');
+                color.forEach(function(brandColor){
+                    brandColor.style.color = '#3867d6'
+                    let icon = document.querySelectorAll('.icon');
+                    icon.forEach(function(item){
+                        item.style.backgroundColor = '#3867d6'
+                        let bgc = document.querySelectorAll('.time-name');
+                        bgc.forEach(function(time){
+                            time.style.backgroundColor = '#3867d6'
+                        })
+                    })
+             })
+            }else if (style.contains('yellow')){
+                let color = document.querySelectorAll('.brand-color');
+                color.forEach(function(brandColor){
+                    brandColor.style.color = '#d4c815'
+                    let icon = document.querySelectorAll('.icon');
+                    icon.forEach(function(item){
+                        item.style.backgroundColor = '#d4c815'
+                        let bgc = document.querySelectorAll('.time-name');
+                        bgc.forEach(function(time){
+                            time.style.backgroundColor = '#d4c815'
+                        })
+                    })
+             })
+            }else if (style.contains('pink')){
+                let color = document.querySelectorAll('.brand-color');
+                color.forEach(function(brandColor){
+                    brandColor.style.color = '#fc427b'
+                    let icon = document.querySelectorAll('.icon');
+                    icon.forEach(function(item){
+                        item.style.backgroundColor = '#fc427b'
+                        let bgc = document.querySelectorAll('.time-name');
+                        bgc.forEach(function(time){
+                            time.style.backgroundColor = '#fc427b'
+                        })
+                    })
+             })
+            }
+            else if (style.contains('purple')){
+                let color = document.querySelectorAll('.brand-color');
+                color.forEach(function(brandColor){
+                    brandColor.style.color = '#6f1e51'
+                    let icon = document.querySelectorAll('.icon');
+                    icon.forEach(function(item){
+                        item.style.backgroundColor = '#6f1e51'
+                        let bgc = document.querySelectorAll('.time-name');
+                        bgc.forEach(function(time){
+                            time.style.backgroundColor = '#6f1e51'
+                        })
+                    })
+             })
+            }
+
+         })
+     })
+
 // var red = document.getElementsByClassName('red')[0];
 // red.onclick = function(){
 //     document.getElementsByClassName('brand-logo')[0].style.color ='#f53b75';
-//     document.getElementsByClassName('icon')[0].style.backgroundColor ='#f53b75';
-//     document.getElementsByClassName('icon')[1].style.backgroundColor ='#f53b75';
-//     document.getElementsByClassName('icon')[2].style.backgroundColor ='#f53b75';
-//     // document.getElementsByClassName('icon')[3].style.hover.backgroundColor ='#f53b75';
+//     let icon = document.getElementsByClassName('icon');
+//     let iconList = Array.from(icon);
+//     iconList.forEach(function(item){
+//         item.style.backgrounColor = '#f53b75';
+//     })
+// }
+//     console.log(icon);
+   
+    // document.getElementsByClassName('icon')[3].style.hover.backgroundColor ='#f53b75';
 
 // }
 // var green = document.getElementsByClassName('green')[0];

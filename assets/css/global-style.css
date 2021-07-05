@@ -65,7 +65,7 @@ p, a, div{
 .primary-btn{
     display: inline-block;
     padding: .8rem 1.8rem;
-    background-color: var(--primary-brand-color);
+    /* background-color: var(--primary-brand-color); */
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--dark-text-color);
@@ -73,6 +73,7 @@ p, a, div{
     margin-top: 2.2rem;
     text-transform: capitalize;
     transition: all 300ms ease;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, .2);
 }
 .primary-btn:hover{
     box-shadow: 10px 0px 20px rgba(0, 0, 0, .2);
@@ -111,7 +112,7 @@ img{
     cursor: pointer;
 }
 .red{
-    background-color: #f53b75;
+    background-color: #ad063b;
 }
 .green{
     background-color: #0be881;
@@ -120,7 +121,7 @@ img{
     background-color: #3867d6;
 }
 .yellow{
-    background-color: #fffab5;
+    background-color: #d4c815;
 }
 .pink{
     background-color: #fc427b;
