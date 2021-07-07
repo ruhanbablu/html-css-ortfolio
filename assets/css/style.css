@@ -154,7 +154,8 @@
     background-color: var(--light-bg-color);
 }
 .about-content{
-    margin-left: 120px;
+    /* margin-left: 120px; */
+    padding-left: 50px;
     background-color: var(--light-bg-color);
 }
 .about-title{

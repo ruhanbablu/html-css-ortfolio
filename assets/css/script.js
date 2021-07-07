@@ -104,7 +104,7 @@ let testemonials = [
     {
         id: 1,
         img: "./assets/img/misbahur.jpg",
-        text: "Misbahur Rahman from Bangladesh Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione   aperiam  cumque tempora praesentium cum molestiae ea doloremque impedit quaerat nam Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda eos reprehenderit excepturi accusantium ullam recusandae esse ipsa, eius repellendus.",
+        text: "Bablu has been the best person I hired him who have tons of experience. I'm more happy to got him on my Team.",
         name: "Misbahur Rahman",
     },
     {
